@@ -1,0 +1,16 @@
+[package]
+name = "scalliony-bot"
+version = "0.1.0"
+description = "Scalliony programming game example bot"
+categories = ["game-development", "wasm", "api-bindings"]
+keywords = ["game", "wasm", "webassembly", "lib"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/scalliony/repo"
+publish = false
+
+[dependencies]
+scalliony-api = { path = "../api", version = "0.1" }
+
+[profile.release]
+lto = "thin"
